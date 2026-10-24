@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{ITEMS,makeBoard,scoreBoard}from'../../docs/zh/engine.js';
+test('12 unique objects; independent shuffled board',()=>{const a=makeBoard(()=>.1);assert.equal(a.length,12);assert.equal(new Set(a).size,12);assert.deepEqual([...a].sort(),[...ITEMS].sort());assert.notDeepEqual(a,ITEMS)});
+test('six correct identities and positions give 12',()=>{const b=[...ITEMS],t=b.slice(0,6),a=Array(12).fill(null);t.forEach((n,i)=>a[i]=n);assert.deepEqual(scoreBoard(b,a,t),{items:6,positions:6,total:12,missed:[]})});
+test('swapping two produces 10, replacing target with decoy loses identity',()=>{const b=[...ITEMS],t=b.slice(0,6),a=Array(12).fill(null);t.forEach((n,i)=>a[i]=n);[a[0],a[1]]=[a[1],a[0]];assert.equal(scoreBoard(b,a,t).total,10);a[0]=b[8];const r=scoreBoard(b,a,t);assert.equal(r.items,5);assert.equal(r.positions,4);assert.ok(r.missed.includes(b[1]))});
+test('duplicate placements are rejected',()=>assert.throws(()=>scoreBoard(ITEMS,['杯子','杯子'],['杯子']),/重复/));
+test('one correct item moved into a spare slot produces 11 of 12',()=>{const b=[...ITEMS],t=b.slice(0,6),a=Array(12).fill(null);t.forEach((n,i)=>a[i]=n);a[9]=a[2];a[2]=null;const r=scoreBoard(b,a,t);assert.equal(r.items,6);assert.equal(r.positions,5);assert.equal(r.total,11)});

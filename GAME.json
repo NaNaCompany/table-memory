@@ -1,0 +1,70 @@
+{
+  "slug": "table-memory",
+  "url": "https://nanalab.kr/table-memory/",
+  "titles": {
+    "ko": "딱 3초 본 식탁, 얼마나 기억할 수 있을까?",
+    "en": "How much of a table can you remember in three seconds?",
+    "zh": "只看三秒的餐桌，你能记住多少？",
+    "es": "¿Cuánto recuerdas de una mesa vista solo tres segundos?"
+  },
+  "descriptions": {
+    "ko": "혼자 즐기고 나만의 결과를 공유하는 작은 게임.",
+    "en": "A small solo game. Play, discover your result, and share.",
+    "zh": "独自挑战，看看自己的成绩，再分享给朋友。",
+    "es": "Un juego para ti. Descubre tu resultado y compártelo."
+  },
+  "color": "#243b32",
+  "cardLines": {
+    "ko": [
+      "딱 3초 본 식탁.",
+      "몇 개나 기억할까?"
+    ],
+    "en": [
+      "Three seconds to look.",
+      "What do you remember?"
+    ],
+    "zh": [
+      "只看三秒的餐桌。",
+      "你能记住多少？"
+    ],
+    "es": [
+      "Tres segundos para mirar.",
+      "¿Qué recuerdas?"
+    ]
+  },
+  "brands": {
+    "ko": "한 번 본 식탁",
+    "en": "A Table, Three Seconds",
+    "zh": "只看一眼的餐桌",
+    "es": "Una mesa, tres segundos"
+  },
+  "hero": {
+    "en": {
+      "first": "Three seconds. One table.",
+      "last": "How much can you remember?",
+      "intro": [
+        "You have just three seconds to study twelve objects.",
+        "Then everything disappears: restore six marked places.",
+        "For full marks, get both the objects and positions right."
+      ]
+    },
+    "zh": {
+      "first": "只看三秒的餐桌，",
+      "last": "你能记住多少？",
+      "intro": [
+        "十二件物品，只给你三秒钟。",
+        "全部遮住后，还原指定的六个位置。",
+        "物品和位置都正确，才能拿满分。"
+      ]
+    },
+    "es": {
+      "first": "Una mesa. Tres segundos.",
+      "last": "¿Cuánto puedes recordar?",
+      "intro": [
+        "Tienes tres segundos para mirar doce objetos.",
+        "Después desaparecen: reconstruye seis lugares señalados.",
+        "Para el pleno, acierta los objetos y sus posiciones."
+      ]
+    }
+  }
+}
